@@ -1,15 +1,15 @@
 tasks:
   - init: |
-      sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
-      export PATH="/home/gitpod/.local/share/solana/install/active_release/bin:$PATH"
-      eval $(gp env -e PATH=$HOME/.local/share/solana/install/active_release/bin:$PATH)
+      sh -c "$(curl -sSfL https://s3.amazonaws.com/release.renec.foundation/v1.9.29/install)"
+      export PATH="/home/gitpod/.local/share/renec/install/active_release/bin:$PATH"
+      eval $(gp env -e PATH=$HOME/.local/share/renec/install/active_release/bin:$PATH)
       npm install
       npm run build:program-rust
     command: |
       gp open README-gitpod.md
-      solana-keygen new --no-bip39-passphrase -o keypair.json
-      solana config set --keypair keypair.json
-      solana config set --url localhost
+      renec-keygen new --no-bip39-passphrase -o keypair.json
+      renec config set --keypair keypair.json
+      renec config set --url localhost
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)

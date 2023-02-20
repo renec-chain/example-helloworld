@@ -4,7 +4,7 @@ some of the dependencies on a Mac or Linux workstation.
 
 ### Rust
 We suggest that you install Rust using the 'rustup' tool. Rustup will install
-the latest version of Rust, Cargo, and the other binaries used in Solana.
+the latest version of Rust, Cargo, and the other binaries used in Renec.
 
 Follow the instructions at [Installing
 Rust](https://www.rust-lang.org/tools/install).

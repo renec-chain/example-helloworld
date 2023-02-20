@@ -6,11 +6,11 @@ Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=git
 https://travis-ci.org/solana-labs/example-helloworld.svg?branch=master
 [travis-url]: https://travis-ci.org/solana-labs/example-helloworld
 
-# Hello world on Solana (Gitpod version)
+# Hello world on Renec (Gitpod version)
 
-This project demonstrates how to use the [Solana Javascript
+This project demonstrates how to use the [Renec Javascript
 API](https://github.com/solana-labs/solana-web3.js) to build, deploy, and
-interact with programs on the Solana blockchain.
+interact with programs on the Renec blockchain.
 
 The project comprises of:
 
@@ -19,13 +19,13 @@ The project comprises of:
   times "hello" has been sent
 
 ## Table of Contents
-- [Hello world on Solana (Gitpod
+- [Hello world on Renec (Gitpod
   version)](#hello-world-on-solana-gitpod-version)
   - [Table of Contents](#table-of-contents)
   - [Quick Start](#quick-start)
     - [Expected output](#expected-output)
     - [Customizing the Program](#customizing-the-program)
-  - [Learn about Solana](#learn-about-solana)
+  - [Learn about Renec](#learn-about-solana)
   - [Learn about the client](#learn-about-the-client)
   - [Learn about the on-chain program](#learn-about-the-on-chain-program)
   - [Expand your skills with advanced
@@ -33,10 +33,10 @@ The project comprises of:
 
 ## Quick Start
 
-Using this example in Gitpod connects to the public Solana `devnet` cluster. Use
-the environment variable `CLUSTER` to choose a different Solana cluster.
+Using this example in Gitpod connects to the public Renec `devnet` cluster. Use
+the environment variable `CLUSTER` to choose a different Renec cluster.
 
-Start a local Solana cluster:
+Start a local Renec cluster:
 ```bash
 solana-test-validator
 ```
@@ -58,7 +58,7 @@ the README for more information.
 
 ### [Customizing the Program](README.md#Customizing-the-Program)
 
-## [Learn about Solana](README.md#learn-about-solana)
+## [Learn about Renec](README.md#learn-about-solana)
 
 ## [Learn about the client](README.md#learn-about-the-client)
 
