@@ -25,20 +25,20 @@ install:
   - nvm install node
   - node --version
   - npm install
-  - sh -c "$(curl -sSfL https://release.solana.com/v1.10.35/install)"
-  - export PATH=~/.local/share/solana/install/active_release/bin:$PATH
-  - solana-install info
+  - sh -c "$(curl -sSfL https://s3.amazonaws.com/release.renec.foundation/v1.9.29/install)"
+  - export PATH=~/.local/share/renec/install/active_release/bin:$PATH
+  - renec-install info
 
 script:
-  - solana-keygen new --no-bip39-passphrase
-  - solana-test-validator --quiet &
+  - renec-keygen new --no-bip39-passphrase
+  - renec-test-validator --quiet &
   - npm run lint
   - npm run build:program-rust
   - npm run test:program-rust
   - cargo test-bpf --manifest-path=./src/program-rust/Cargo.toml
-  - solana config set --url localhost
-  - solana program deploy dist/program/helloworld.so
+  - renec config set --url localhost
+  - renec program deploy dist/program/helloworld.so
   - npm run start
   - npm run build:program-c
-  - solana program deploy dist/program/helloworld.so
+  - renec program deploy dist/program/helloworld.so
   - npm run start

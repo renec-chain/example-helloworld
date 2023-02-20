@@ -12,7 +12,7 @@ import {Keypair} from '@solana/web3.js';
  * @private
  */
 async function getConfig(): Promise<any> {
-  // Path to Solana CLI config file
+  // Path to Renec CLI config file
   const CONFIG_FILE_PATH = path.resolve(
     os.homedir(),
     '.config',
@@ -25,7 +25,7 @@ async function getConfig(): Promise<any> {
 }
 
 /**
- * Load and parse the Solana CLI config file to determine which RPC url to use
+ * Load and parse the Renec CLI config file to determine which RPC url to use
  */
 export async function getRpcUrl(): Promise<string> {
   try {
@@ -41,7 +41,7 @@ export async function getRpcUrl(): Promise<string> {
 }
 
 /**
- * Load and parse the Solana CLI config file to determine which payer to use
+ * Load and parse the Renec CLI config file to determine which payer to use
  */
 export async function getPayer(): Promise<Keypair> {
   try {
